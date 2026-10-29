@@ -1,0 +1,165 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 30px;
+	line-height: 1.4;
+	color: #000;
+}
+
+.bg-cyan {
+	background-color: #00ffff;
+	padding: 2px 4px;
+}
+
+.bg-yellow {
+	background-color: #ffff00;
+	padding: 2px 4px;
+}
+
+.bg-gray {
+	background-color: #d3d3d3;
+	padding: 2px 4px;
+}
+
+.bg-magenta {
+	background-color: #ff00ff;
+	padding: 2px 4px;
+}
+
+p {
+	margin: 10px 0;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-center {
+	text-align: center;
+}
+
+h2 {
+	color: #800080;
+	font-size: 20px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+	font-family: Arial, sans-serif;
+}
+
+th,
+td {
+	border: 2px solid #666;
+	padding: 6px 10px;
+	font-size: 15px;
+}
+
+th.col1 {
+	font-family: 'Monotype Corsiva';
+	background-color: #ffffff;
+	font-style: italic;
+	font-weight: bold;
+	text-align: left;
+}
+
+th.col2 {
+	background-color: #000000;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+}
+
+th.col3 {
+	background-color: #00ffff;
+	color: #0000ff;
+	font-weight: bold;
+	text-align: right;
+}
+
+th.col4 {
+	background-color: #ff80c0;
+	color: #000000;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: left;
+}
+
+th.col5 {
+	background-color: #ffff00;
+	color: #000080;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+td {
+	text-align: center;
+}
+
+td.cell1 {
+	color: #0000ff;
+	font-weight: bold;
+	text-align: left;
+}
+
+td.cell2 {
+	font-weight: bold;
+}
+
+td.cell3 {
+	color: #0000ff;
+	font-weight: bold;
+	text-align: right;
+}
+
+td.cell4 {
+	font-weight: bold;
+	text-align: left;
+}
+
+td.cell5 {
+	color: #0000ff;
+	font-weight: bold;
+}
+
+.math-title {
+	color: #0000ff;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 18px;
+	text-decoration: line-through;
+}
+
+
+.back-bar {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    background-color: rgba(31, 77, 127, 1);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.back-bar nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-bar nav a:hover {
+    text-decoration: underline;
+}
+
+body:has(> .back-bar) > .back-bar + * {
+    margin-top: 70px;
+}

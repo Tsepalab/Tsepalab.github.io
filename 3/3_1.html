@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Таблицы в HTML</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.page-container {
+			max-width: 570px;
+			margin: 20px auto;
+			padding: 20px 25px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+		}
+
+		h1 {
+			text-align: center;
+			color: #0000d0;
+			font-size: 28px;
+			font-weight: bold;
+			letter-spacing: 2px;
+			margin-bottom: 20px;
+		}
+
+		h1 span.first-letter {
+			text-decoration: underline wavy blue;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="back-bar">
+		<nav>
+			<a href="../index.html#tasks">К заданиям</a>
+		</nav>
+	</header>
+
+	<div class="page-container">
+
+		<h1><span class="first-letter">Т</span> а б л и ц ы в HTML</h1>
+
+		<p>
+			<span class="bg-cyan">Одним из наиболее мощных и широко применяемых в <strong>HTML</strong> средств являются
+				<strong><em>таблицы</em></strong>.</span>
+		</p>
+
+		<p class="align-right">
+			<span class="bg-yellow"><u>Понятие табличного представления данных не нуждается в дополнительном
+					пояснении.</u></span>
+			<span class="bg-gray">В HTML таблицы используются не только традиционно, как метод представления данных, но
+				и как
+				средство форматирования Web-страниц.</span>
+		</p>
+
+		<h2>Создание простейших HTML-таблиц</h2>
+
+		<p>
+			<span class="bg-magenta"><strong><em>Описание</em></strong></span>
+			<strong><em><span style="text-decoration: underline;">таблиц</span> <span
+						style="text-decoration: underline;">должно</span></em></strong>
+			располагаться внутри раздела документа &lt;BODY&gt;.
+		</p>
+
+		<p class="align-center">
+			Каждая <span style="color: blue; text-decoration: underline;"><strong>таблица</strong></span> должна
+			<strong>начинаться тэгом &lt;TABLE&gt; и завершаться тэгом &lt;/TABLE&gt;.</strong>
+		</p>
+
+		<p class="align-center">
+			<span class="bg-gray">
+				<span style="color: blue; font-family: 'Monotype Corsiva';"><strong><em>Каждая</em></strong></span>
+				строка начинается тэгом &lt;TR&gt; (<span style="text-decoration: underline red dotted;">Table
+					Row</span>) и
+				завершается тэгом &lt;/TR&gt;.
+				<span style="color: red;"><strong><em>Отдельная</em></strong></span>
+				ячейка в строке обрамляется парой тегов &lt;TD&gt; и &lt;/TD&gt;
+				(Table Data) или &lt;TH&gt; и &lt;/TH&gt; (Table Header)
+			</span>
+		</p>
+
+		<p class="align-right"><strong>Таблица 1</strong></p>
+
+		<p class="align-center math-title" style="font-family: 'Monotype Corsiva';">
+			Математические выражения
+		</p>
+
+		<table>
+			<thead>
+				<tr>
+					<th class="col1">Поле 1</th>
+					<th class="col2">Поле 2</th>
+					<th class="col3">Поле 3</th>
+					<th class="col4">Поле 4</th>
+					<th class="col5">П о л е 5</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="cell1">(a+b)<sup>2</sup></td>
+					<td class="cell2">a<sup>2</sup>-b<sup>2</sup></td>
+					<td class="cell3">(a-b)<sup>3</sup></td>
+					<td class="cell4">A<sub>1</sub>+A<sub>2</sub>+...+A<sub>i</sub></td>
+					<td class="cell5">y=x<sup>2</sup></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>
