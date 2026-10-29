@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Персональная страница студента — Цепы А.М.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: rgba(31, 77, 127, 1);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+            padding: 10px;
+        }
+
+        img {
+            border-radius: 100px;
+            border: 3px solid rgba(31, 77, 127, 1);
+        }
+
+
+        .task-list {
+            display: flex;
+            gap: 10px;
+        }
+
+        .task-link {
+            display: inline-block;
+            background-color: rgba(31, 77, 127, 1);
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Моя страница</h1>
+        <nav>
+            <a href="#about">Обо мне</a> |
+            <a href="#university">Мой ВУЗ</a> |
+            <a href="#group">Моя группа</a> |
+            <a href="#profession">Профессия</a> |
+            <a href="#hobby">Увлечения</a> |
+            <a href="#tasks">Задания</a> |
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>Обо мне</h2>
+            <img src="cat.jpg" alt="Фото студента" width="150" height="150">
+            <p>
+                Меня зовут <strong>Цепа Александр Максимович</strong> &mdash; я студент
+                <em>Нижневартовского государственного университета</em>.
+                Это моя персональная web-страница.
+            </p>
+            <p>
+                Здесь вы можете найти информацию обо мне,
+                моей группе, вузе, будущей профессии и увлечениях.
+            </p>
+        </section>
+
+        <section id="university">
+            <h2>Мой ВУЗ &mdash; НВГУ</h2>
+            <p>
+                Я обучаюсь в <strong>Нижневартовском государственном университете</strong>
+                &mdash; одном из ведущих вузов Ханты-Мансийского автономного округа &mdash; Югры.
+            </p>
+            <p>
+                Официальный сайт университета:
+                <a href="https://nvsu.ru" target="_blank">
+                    www.nvsu.ru
+                </a>
+            </p>
+            <h3>Кратко о вузе</h3>
+            <ul>
+                <li>Основан в 1992 году</li>
+                <li>Расположен в городе <u>Нижневартовске</u></li>
+                <li>Включает несколько факультетов</li>
+                <li>Готовит специалистов по IT, педагогике, экономике и другим направлениям</li>
+            </ul>
+        </section>
+
+        <section id="group">
+            <h2>Моя группа</h2>
+            <p>
+                Я учусь на <strong>4</strong> курсе в группе <strong>3303</strong> на направлении
+                <em>«Информационные системы и технологии в бизнесе»</em>.
+            </p>
+        </section>
+
+        <section id="profession">
+            <h2>Моя будущая профессия</h2>
+            <p>
+                После окончания университета я планирую стать
+                <strong>веб-разработчиком</strong>.
+            </p>
+            <p>Основные направления моей деятельности:</p>
+            <ol>
+                <li>Разработка веб-приложений</li>
+                <li>Работа с базами данных</li>
+                <li>Автоматизация процессов</li>
+            </ol>
+            <p>
+                Мои навыки в IT:
+                <code>HTML</code>, <code>CSS</code>,
+                <code>JavaScript</code>, <code>Python</code>.
+            </p>
+        </section>
+
+        <section id="hobby">
+            <h2>Мои увлечения и хобби</h2>
+            <ul>
+                <li>Программирование и изучение новых технологий</li>
+                <li>Компьютерные игры</li>
+                <li>Готовка десертов и выпечки</li>
+            </ul>
+        </section>
+
+        <section id="tasks">
+            <h2>Сделанные задания</h2>
+            <div class="task-list">
+                <a href="2_2_A.html" class="task-link">Задание 2_2_A</a>
+                <a href="2_2_B.html" class="task-link">Задание 2_2_B</a>
+                <a href="2_3_A.html" class="task-link">Задание 2_3_A</a>
+                <a href="2_3_B.html" class="task-link">Задание 2_3_B</a>
+                <a href="3/3_1.html" class="task-link">Задание 3_1</a>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <h2>Контактная информация</h2>
+            <p>
+                Электронная почта: atsepa15@mail.ru
+            </p>
+            <p>
+                Телефон (вымышленный): +7 (123) 456-78-90
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

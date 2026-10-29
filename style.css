@@ -1,0 +1,26 @@
+.back-bar {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    background-color: rgba(31, 77, 127, 1);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.back-bar nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-bar nav a:hover {
+    text-decoration: underline;
+}
+
+.back-bar + * {
+    margin-top: 70px;
+}

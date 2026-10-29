@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>ЗАО Птицефабрика №1</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            color: #000;
+            margin: 0;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-container {
+            width: 100%;
+            padding: 20px;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .form-label {
+            width: 180px;
+            text-align: right;
+            padding-right: 10px;
+            flex-shrink: 0;
+        }
+
+        .form-row.textarea-row {
+            align-items: flex-start;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select,
+        textarea {
+            border: 1px solid #7a7a7a;
+            padding: 2px;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            box-sizing: border-box;
+        }
+
+        .input-short {
+            width: 120px;
+        }
+
+        .input-medium {
+            width: 250px;
+        }
+
+        .input-tiny {
+            width: 60px;
+        }
+
+        textarea {
+            width: 300px;
+            height: 80px;
+            overflow-y: scroll;
+            resize: none;
+        }
+
+        select {
+            width: 80px;
+        }
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            cursor: pointer;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 0;
+            vertical-align: middle;
+        }
+
+        .buttons-row {
+            display: flex;
+            margin-top: 15px;
+            padding-left: 190px;
+            gap: 5px;
+        }
+
+        button {
+            background-color: #dcdcdc;
+            border: 1px solid #a0a0a0;
+            border-radius: 2px;
+            color: #000;
+            padding: 3px 10px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 1px 1px 0px #fff inset;
+        }
+
+        button:active {
+            box-shadow: 1px 1px 0px #a0a0a0 inset;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="back-bar">
+        <nav>
+            <a href="index.html#tasks">К заданиям</a>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <h1>ЗАО Птицефабрика №1</h1>
+
+        <form>
+
+            <div class="form-row">
+                <label class="form-label">Фамилия:</label>
+                <input class="input-short" type="text" id="surname">
+            </div>
+
+            <div class="form-row">
+                <label class="form-label">Инициалы:</label>
+                <input class="input-short" type="text" id="initials">
+            </div>
+
+            <div class="form-row">
+                <label class="form-label">Пароль:</label>
+                <input class="input-short" type="password" id="password">
+            </div>
+
+            <div class="form-row">
+                <label class="form-label">Адрес получателя:</label>
+                <input class="input-medium" type="text" id="address">
+            </div>
+
+            <div class="form-row">
+                <label class="form-label">Количество:</label>
+                <input class="input-tiny" type="text" id="quantity">
+            </div>
+
+            <div class="form-row">
+                <label class="form-label">Тип:</label>
+                <select>
+                    <option value="chicken">Куриные</option>
+                    <option value="quail">Перепелиные</option>
+                </select>
+                <select style="margin-left: 5px;">
+                    <option value="select">Отборные</option>
+                    <option value="regular">Обычные</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label class="form-label">Доставка:</label>
+                <div class="radio-group">
+                    <label><input type="radio" value="post"> Почтой</label>
+                    <label><input type="radio" value="email"> Электронно</label>
+                    <label><input type="radio" value="courier"> Курьером</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label class="form-label">Требуется накладная:</label>
+                <input type="checkbox" value="yes">
+            </div>
+
+            <div class="form-row textarea-row">
+                <label class="form-label">Дополнительная информация:</label>
+                <textarea id="info"></textarea>
+            </div>
+
+            <div class="buttons-row">
+                <button type="submit">Заказать</button>
+                <button type="reset">Отменить</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
